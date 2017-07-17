@@ -3,6 +3,9 @@
 demo https://vvanghelue.github.io/threejs-cubemap-reflection-test/
 
 ```javascript
+renderer.shadowMap.enabled = true;
+renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+
 var light = this.getObjectByName('DirectionalLight 1');
 light.shadow.camera.left = -50;
 light.shadow.camera.right = 50;
